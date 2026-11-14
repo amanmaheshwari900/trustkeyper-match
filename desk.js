@@ -74,7 +74,7 @@ export function signIn(app, after) {
     <form id="si" class="card">
       <label class="field"><span>Team passphrase</span><input id="si-pass" type="password" autocomplete="current-password" required></label>
       <p class="err" id="si-err" hidden></p>
-      <label class="check"><input type="checkbox" id="si-keep" checked> Keep me signed in on this phone</label>
+      <label class="check"><input type="checkbox" id="si-keep" checked> Keep me signed in on this device</label>
       <button class="btn wide" id="si-go">Open the desk</button>
     </form>
     <p class="muted small center">Ask Aman for the passphrase.</p>
@@ -663,7 +663,7 @@ export function moreScreen(app) {
         .join('') || '<div class="empty small"><p>Nothing read yet.</p></div>'
     }</div>
     <h2 class="sec">Backup</h2>
-    <p class="muted small">Your calls, notes, sent homes and visits are kept on this phone. Download a backup now and then.</p>
+    <p class="muted small">Your calls, notes, sent homes and visits are kept on this device. Download a backup now and then.</p>
     <div class="btn-row"><button class="btn ghost" data-act="backup">${icon('download', 18)} Download</button><label class="btn ghost">${icon('upload', 18)} Restore<input type="file" accept=".json" id="restore" hidden></label></div>
     <button class="btn ghost wide danger" data-act="out">${icon('logout', 18)} Sign out</button>
   `,
